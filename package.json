@@ -1,0 +1,14 @@
+{
+  "name": "x402-mcp-paywall-starter",
+  "version": "1.0.0",
+  "description": "Zero-custody x402 v2 & MCP paywall starter settling USDT/USDC/ETH/SOL/BTC directly to your wallet via PayGate.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node server_express.mjs",
+    "test": "node server_express.mjs --self-test"
+  }
+}

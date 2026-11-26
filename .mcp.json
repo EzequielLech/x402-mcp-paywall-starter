@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "paygate-checkout": {
+      "url": "https://chainguard-studio-production.up.railway.app/paygate/mcp"
+    }
+  }
+}

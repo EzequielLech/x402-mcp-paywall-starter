@@ -1,0 +1,29 @@
+name: PayGate x402 & Checkout Gate
+
+on:
+  push:
+    branches: ["main", "master"]
+  pull_request:
+
+jobs:
+  validate-x402-and-test:
+    name: Validate x402 v2 Manifest & Run Paywall Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate .well-known/x402.json & Build 7-Chain Checkout Link
+        uses: EzequielLech/paygate-usdt@v2.8.1
+        with:
+          manifest-path: ".well-known/x402.json"
+          merchant-wallet: "0x4Ed4D0750453C027FA8398067d5af980Bcc9B6eD"
+          amount-usd: "9"
+          network: "base"
+          title: "PayGate Cloud Pro Starter Pass"
+
+      - name: Run Python x402 Starter Self-Test
+        run: python3 server_fastapi.py --self-test
+
+      - name: Run Node.js 18+ ESM Paywall Self-Test
+        run: node server_express.mjs --self-test

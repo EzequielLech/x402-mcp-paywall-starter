@@ -1,0 +1,19 @@
+{
+  "x402Version": 2,
+  "service": {
+    "name": "x402 & MCP Non-Custodial Paywall Starter",
+    "provider": "PayGate USDT",
+    "docs": "https://github.com/EzequielLech/paygate-usdt"
+  },
+  "accepts": [
+    {
+      "scheme": "exact",
+      "network": "eip155:8453",
+      "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "maxAmountRequired": "1000000",
+      "resource": "/api/premium-alpha",
+      "description": "Unlock real-time AI/DeFi endpoint ($1.00 USDC on Base or 7-chain PayGate checkout)",
+      "payTo": "0x4Ed4D0750453C027FA8398067d5af980Bcc9B6eD"
+    }
+  ]
+}
