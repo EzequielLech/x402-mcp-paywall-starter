@@ -20,7 +20,7 @@ Every payment settles **100% directly from buyer to your self-custody wallet** a
 | [`server_fastapi.py`](server_fastapi.py) | Runnable Python FastAPI `402 Payment Required` server with `PAYMENT-REQUIRED` header & live on-chain verification |
 | [`server_express.mjs`](server_express.mjs) | Zero-dependency Node.js 18+ HTTP/Express `x402 v2` server & checkout helper |
 | [`.mcp.json`](.mcp.json) | Pre-wired MCP Server config for Cursor, Claude Code, Windsurf, and OpenCode (`/paygate/mcp`) |
-| [`.github/workflows/paygate.yml`](.github/workflows/paygate.yml) | Automated CI check powered by [`EzequielLech/paygate-usdt@v2.8.1`](https://github.com/marketplace/actions/paygate-x402-crypto-checkout-gate) |
+| [`.github/workflows/paygate.yml`](.github/workflows/paygate.yml) | Automated CI check powered by [`EzequielLech/paygate-usdt@v2.9.0`](https://github.com/marketplace/actions/paygate-x402-crypto-checkout-gate) |
 
 ---
 
